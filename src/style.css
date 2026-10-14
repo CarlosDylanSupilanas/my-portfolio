@@ -1,0 +1,247 @@
+/* General style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #080808;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #111;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Logo */
+.logo {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  position: absolute;
+  left: 8%;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+nav a {
+  color: rgb(238, 232, 232);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: gray;
+}
+
+
+nav a:hover {
+  color: gray;
+}
+
+
+/* Home section */
+.Theprofile {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 10%;
+  gap: 30px;
+}
+
+.hero-content {
+  width: 60%;
+}
+
+.Theprofile h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.Theprofile h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.Theprofile p {
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+
+
+/* The Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.btn.light {
+  background-color: white;
+  color: black;
+}
+
+
+
+/* My photo */
+.profile {
+  width: 40%;
+  text-align: center;
+}
+
+.profile img {
+  width: 280px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+}
+
+.profile img:hover {
+  transform: translateY(-10px) scale(1.05);
+}
+
+/* About and Skills */
+.content-section {
+  padding: 80px 10%;
+  background-color: #111;
+  min-height: 50vh;
+}
+
+.content-section h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.content-section article {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #1a1a1a;
+}
+
+.content-section h3 {
+  margin-bottom: 15px;
+}
+
+.content-section p {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Skills */
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-list div {
+  background-color: #222;
+  border: 1px solid #555;
+  padding: 15px 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #080808;
+  color: gray;
+  text-align: center;
+  padding: 20px;
+}
+
+/* For mobile phones */
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav a {
+    margin: 0 8px;
+  }
+
+  .Theprofile {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 7%;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .Theprofile h1 {
+    font-size: 30px;
+  }
+/* Profile Hnadler design media*/
+  .profile {
+    width: 100%;
+    border-radius: 3px;
+  }
+
+
+
+
+/* Content area media*/
+  .content-section {
+    padding: 60px 7%;
+  }
+}
+
+
+/* my skills hover and transition*/
+.skill-list div{
+    transition: 0.5s;
+}
+.skill-list div:hover{
+    transform: translate(-5px);
+    background-color:white;
+    color: #111;
+}
+
+#skills {
+  text-align: center;
+}
+
+/* Center the skill boxes */
+.skill-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+/* Skill box design */
+.skill-list div {
+  padding: 15px 20px;
+  background-color: #222;
+  border: 1px solid #555;
+  transition: 0.5s;
+}
